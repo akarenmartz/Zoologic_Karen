@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{885FAB9F-CCB0-4739-AEC9-B30EEBCFEFF6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Zoologic_Karen</RootNamespace>
+    <AssemblyName>Zoologic_Karen</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarDatos.Designer.cs">
+      <DependentUpon>AgregarDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlimentacionAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlimentacionAnimal.Designer.cs">
+      <DependentUpon>AlimentacionAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Animal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animal.Designer.cs">
+      <DependentUpon>Animal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AtencionAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtencionAnimal.Designer.cs">
+      <DependentUpon>AtencionAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buscador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscador.Designer.cs">
+      <DependentUpon>Buscador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cancelaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cancelaciones.Designer.cs">
+      <DependentUpon>Cancelaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConexionMaestra_Karen.cs" />
+    <Compile Include="Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado.Designer.cs">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformacionAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformacionAnimal.Designer.cs">
+      <DependentUpon>InformacionAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocacionAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocacionAnimal.Designer.cs">
+      <DependentUpon>LocacionAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Designer.cs">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursos.Designer.cs">
+      <DependentUpon>Recursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta_Boetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta_Boetos.Designer.cs">
+      <DependentUpon>Venta_Boetos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AgregarDatos.resx">
+      <DependentUpon>AgregarDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlimentacionAnimal.resx">
+      <DependentUpon>AlimentacionAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animal.resx">
+      <DependentUpon>Animal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtencionAnimal.resx">
+      <DependentUpon>AtencionAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscador.resx">
+      <DependentUpon>Buscador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cancelaciones.resx">
+      <DependentUpon>Cancelaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado.resx">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformacionAnimal.resx">
+      <DependentUpon>InformacionAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocacionAnimal.resx">
+      <DependentUpon>LocacionAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento.resx">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursos.resx">
+      <DependentUpon>Recursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta_Boetos.resx">
+      <DependentUpon>Venta_Boetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\area.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categoria .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\especie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mantenimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recurso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Regresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuFondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoJirafius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuRec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AggInf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoAnimal .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoo_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EsloganZoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EsloganZonaZoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Linea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lineas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titulo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZooTtuloP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TituloZoo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoooTitulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoSuperior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoSuperior1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ardillita.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoologico_Karen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carrito.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boletos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alimentacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Locacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atencion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo_Venta.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_Ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
